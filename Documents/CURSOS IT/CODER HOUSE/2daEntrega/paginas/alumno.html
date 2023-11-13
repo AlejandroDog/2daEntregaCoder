@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH ROBOT/Alumnos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylealumno.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script defer src="../js/funtion.js"></script>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <h1 class="h1">
+            <a href="../index.html" class="a">VOLVER</a>
+        </h1>
+
+        <button class="button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+
+        <nav class="nav">
+            <ul class="ul">
+                <!--  <li class="li"><a href="../index.html" class="a">Home</a></li>-->
+                <li class="li"><a href="#" class="a">Quienes Somos</a></li>
+                <li class="li"><a href="#" class="a">Talleres</a></li>
+                <li class="li"><a href="#" class="a">Tienda</a></li>
+                <li class="li"><a href="#" class="a">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+           <section class="hero" id="hero">
+            <div class="hero__slide">
+                <div class="hero__slider"></div>
+            </div>
+        </section>
+
+      
+
+        <article>
+            <h1 id="welcome-message">Bienvenido a tu Curso </h1>
+        </article>
+
+
+        <section class="tabla">
+            <table>
+                <thead>
+                    <caption>HORARIO SEMANAL</caption>
+                    <tr>
+                        <th>DIA</th>
+                        <th>MATERIA</th>
+                        <th>HORARIO</th>
+                        <th>DOCENTE</th>
+                        <th>OBSERVACIONES</th>
+                        <th>CANCELAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LUNES</td>
+                        <td>Programacion</td>
+                        <td>15hs a 17hs</td>
+                        <td>Rodrigo Alvarez</td>
+                        <td>Sincronica</td>
+                        <td><input type="submit" value="CANCELAR"> </td>
+                    </tr>
+                    <tr>
+                        <td>MARTES</td>
+                        <td>Logica</td>
+                        <td>16hs a 19hs</td>
+                        <td>Marcelo Baccello</td>
+                        <td>Sincronica</td>
+                        <td><input type="submit" value="CANCELAR"> </td>
+                    </tr>
+                    <tr>
+                        <td>MIERCOLES</td>
+                        <td>LIBRE</td>
+                        <td>LIBRE</td>
+                        <td>LIBRE</td>
+                        <td>LIBRE</td>
+                        <td><input type="submit" value="CANCELAR"> </td>
+                    </tr>
+                    <tr>
+                        <td>JUEVES</td>
+                        <td>Practica</td>
+                        <td>16hs a 19hs</td>
+                        <td>Karina Perez</td>
+                        <td>Sincronica</td>
+                        <td><input type="submit" value="CANCELAR"> </td>
+                    </tr>
+                    <tr>
+                        <td>VIERNES</td>
+                        <td>Matematica </td>
+                        <td>17hs a 20hs</td>
+                        <td>Rodrigo Cianciulli</td>
+                        <td>Sincronica</td>
+                        <td><input type="submit" value="CANCELAR"> </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">CURSO GENIOS</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+
+        <section class="seminario" id="seminario">
+            <h3 class="contacto__titulo">REGISTRATE EN NUESTROS SEMINARIOS</h3>
+            <div class="seminario__content">
+                <div class="seminario__form">
+                    <form id="form">
+                        <p class="block">
+                            <label for="nombre">Nombre Completo:
+
+                            </label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </p>
+                        <p>
+                            <label for="seminarios">Seminarios:</label>
+                            <input list="seminarios" name="seminarios">
+                            
+
+                            <datalist id="seminarios">
+                                <option value="Roblox">
+                                <option value="Inteligencia Artificial">
+                                <option value="Programacion Crativa">
+                                <option value="Construccion Robots">
+                               
+
+                            </datalist>
+
+
+                        </p>
+                        <p class="block">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                        </p>
+                        <p class="contacto__respuesta block" id="respuesta">
+                            <!-- ALERTA DE MENSAJES -->
+                        </p>
+                        <p class="block">
+                            <input class="btn" type="submit" value="Enviar">
+                        </p>
+                    </form>
+                </div>
+
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__info">
+                <h4>Consulta</h4>
+                <p> Realice su Consulta.</p>
+            </div>
+
+            <div class="footer__social">
+
+                <h4>REDES SOCIALES</h4>
+                <div class="iconos">
+                    <ul>
+                        <li><a target="_blank" href="https://instagram.com"><i class="bi bi-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://facebook.com"><i class="bi bi-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://youtube.com"><i class="bi bi-youtube"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com"><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__menu">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#nosotros">Quienes Somos</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>NORTH ROBOT - © 2023 - Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <a class="btn-wsp"
+        href="https://api.whatsapp.com/send?phone=542984413649&text=Hola+Gran+Hotel+Argentino%21+Deseo+contactarme+con+ustedes."
+        target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="42"
+            height="42" viewBox="0 0 24 20" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+    </a>
+
+
+</body>
+
+</html>
